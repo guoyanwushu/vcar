@@ -1,0 +1,233 @@
+.swiper-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /*//background-color: #f0f0f0;*/
+}
+.swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  /*position: relative;*/
+}
+img.arrow {
+  position: absolute;
+  width: 24px;
+  height: 15px;
+  left: 50%;
+  margin-left: -12px;
+  bottom: 14px;
+  animation: arrow 1s  linear infinite;
+  z-index: 99;
+}
+@keyframes arrow {
+  0% {
+    bottom: 24px;
+  }
+  100% {
+    bottom: 7px;
+  }
+}
+* {
+  margin: 0;
+  bottom: 0;
+  box-sizing: border-box;
+}
+.swiper-slide {
+  padding: 12px;
+}
+.one {
+  background-color: #F57800;
+}
+.one img {
+  position: absolute;
+  left: 50%;
+}
+.one img.title {
+  width: 86%;
+  top: 61px;
+  margin-left: -43%;
+}
+.one img.desc {
+  width: 94%;
+  margin-left: -48%;
+  bottom: 115px;
+}
+p.subtitle {
+  margin-top: 26px;
+  height: 25px;
+  width: 100%;
+  width: auto;
+}
+p.img {
+  height: 33px;
+  margin-top: 20px;
+  text-align: center;
+}
+p.img img {
+  height: 100%;
+}
+p.subtitle img {
+  height: 25px;
+}
+p.subcontent {
+  margin-top: 3px;
+  font-size: 14px;
+  color: #666666;
+}
+p.suit-for {
+  font-size: 14px;
+  margin-top: 8px;
+  color: #666666;
+}
+p.suit-for span {
+  color: #FF7D00;
+  margin-right: 5px;
+}
+p.subimg {
+  width: 100%;
+  position: absolute;
+  bottom: 70px;
+}
+p.subimg img {
+  width: 100%;
+}
+.task {
+  background-color: #FF7D00;
+  padding-top: 51px;
+}
+.task .title {
+  width: 270px;
+  height: 33px;
+  margin: 0 auto;
+  background-image: url("../../assets/production/txt_carinsurancehandbook_operationprocess@3x.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+}
+.task .content {
+  display: flex;
+  align-items: center;
+}
+.task .content .sidebar {
+  width: 30px;
+  margin-left: 48px;
+}
+.task .content .sidebar i {
+  display: block;
+  width: 22px;
+  height: 96px;
+  position: relative;
+  background-size: 22px 22px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.task .content .sidebar i::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 20px;
+  background-color: #fff;
+  left: 50%;
+  margin-left: -1px;
+  top: 50%;
+  margin-top: -27px;
+}
+.task .content .sidebar i::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 60px;
+  background-color: #fff;
+  left: 50%;
+  margin-left: -1px;
+  top: 100%;
+  margin-top: -38px;
+}
+.task .content .sidebar .index_1 {
+  background-image: url("../../assets/production/img_operationprocess_serialnumber01@3x.png");
+}
+.task .content .sidebar .index_2 {
+  background-image: url("../../assets/production/img_operationprocess_serialnumber02@3x.png");
+}
+.task .content .sidebar .index_3 {
+  background-image: url("../../assets/production/img_operationprocess_serialnumber03@3x.png");
+}
+.task .content .sidebar .index_4 {
+  background-image: url("../../assets/production/img_operationprocess_serialnumber04@3x.png");
+}
+.task .content .sidebar .index_4::after {
+  height: 24px;
+}
+.task .content .steps {
+  flex: 1;
+}
+.task .content .steps div {
+  height: 96px;
+  background-size: 188px 24px;
+  background-position: 24px 36px;
+  background-repeat: no-repeat;
+}
+.task .content .steps .step_1 {
+  background-image: url("../../assets/production/img_operationprocess_step01@3x.png");
+}
+.task .content .steps .step_2 {
+  background-image: url("../../assets/production/img_operationprocess_step02@3x.png");
+}
+.task .content .steps .step_3 {
+  background-image: url("../../assets/production/img_operationprocess_step03@3x.png");
+}
+.task .content .steps .step_4 {
+  background-image: url("../../assets/production/img_operationprocess_step04@3x.png");
+}
+.ending {
+  padding-top: 40px;
+  background: #FF7D00;
+}
+.ending .title {
+  width: 100%;
+  height: 46px;
+  background-image: url("../../assets/production/txt_carinsurancehandbook_cxzhy@3x.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+.ending .section {
+  text-align: center;
+  padding-top: 37px;
+}
+.ending .section .ewm {
+  text-align: center;
+  width: 198px;
+  height: 198px;
+  display: inline-block;
+  background-image: url("../../assets/production/img_carinsurancehandbook_erweima@3x.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 7px;
+}
+.ending .section .dec {
+  width: 154px;
+  height: 30px;
+  font-size: 22px;
+  margin: 0 auto;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 37px;
+}
+.ending .foot {
+  width: 237px;
+  height: 46px;
+  display: block;
+  margin: 0 auto;
+  background-image: url("../../assets/production/txt_carinsurancehandbook_jgbhy@3x.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 7px;
+}
+[v-cloak] {
+  display: none;
+}

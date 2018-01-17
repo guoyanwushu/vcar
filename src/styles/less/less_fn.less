@@ -1,0 +1,13 @@
+@baseSize:64;
+.p2r(@name,@px){
+  @{name}:@px*2/@baseSize *1rem;
+}
+
+
+.boxShadow(@param){
+  -webkit-box-shadow: @param;
+  -moz-box-shadow: @param;
+  box-shadow: @param;
+}
+
+

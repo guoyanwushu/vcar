@@ -1,0 +1,24 @@
+
+    ul,ol { list-style:none;}
+    a{text-decoration: none}
+    .lL{float: left}
+    .rR{float: right}
+    .clear{clear: both}
+    html,body,.page{height: 100%}
+    .page { max-width: 640px; margin: 0 auto;margin-top: 44px}
+    .article {
+        padding: 12px 15px;
+        font-size: 14px;
+        color: #151515;
+        line-height: 20px;}
+    .article h1{ 
+        text-align: center; 
+        font-size: 16px; 
+        margin-bottom: 10px;
+        line-height: 22px;
+        font-weight: bold;
+    }
+    .article h3{ text-align: center; font-size: 16px; margin-bottom: 10px;}
+    .article ul li{ padding-bottom: 8px;}
+    .article .bold { font-weight: bold;}
+    .article .red { color: #f00;}

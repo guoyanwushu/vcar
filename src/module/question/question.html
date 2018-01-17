@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit"/>
+    <meta http-equiv="x-ua-Compatible" content="IE=Edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <meta content="email=no" name="format-detection"/>
+    <title>Title</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #EFEFF4;
+        overflow: scroll;
+    }
+    .question{
+        margin-top: 9px;
+    }
+    .question-item{
+        margin-bottom: 16px;
+        position: relative;
+        padding: 0 12px;}
+    .question-item>div{
+        position: relative;
+    }
+     .question-item p{
+            font-size: 12px;
+            color: #666666;
+            letter-spacing: 0.01px;
+            line-height: 14px;
+            position: relative;
+            text-indent: 16px;}
+     .question-item .ansicon{
+                position: absolute;
+                z-index: 99;
+                left: 0;
+                top: 1px;
+                width: 12px;
+                height: auto;
+            }
+        
+        .question-item h5{
+            position: relative;
+            text-indent: 16px;
+            margin-bottom: 6px;
+            font-size: 14px;}
+        .question-item .reqicon{
+                position: absolute;
+                z-index: 99;
+                left: 0;
+                top: 3px;
+                width: 12px;
+                height: auto;
+        }
+        .question-item:first-child{
+            margin-top: 9px;
+        }
+    [v-cloak]{
+        display: none;
+    }
+    </style>
+</head>
+<body style="background: #ffffff;">
+    <div class="container" id="app" v-cloak>
+      <div class="question">
+        <div class="question-item">
+            <div><img v-bind:src="reqicon" alt="" class="reqicon"><h5 >虎优是谁？</h5></div>
+            <div><img v-bind:src="ansicon"alt="" class="ansicon"><p>虎优车险是上海分太数据科技有限公司旗下一款致力于车险精准比价的互联网平台。</p></div>
+        </div>
+        <div class="question-item">
+            <div><img v-bind:src="reqicon" alt="" class="reqicon"><h5 >虎优车险购买流程？</h5></div>
+            <div><img v-bind:src="ansicon"alt="" class="ansicon"><p>填写车辆信息—>选择车险险种—>车险报价—>完善投保信息—>核保—>填写订单收货地址—>支付—>承保成功—>邮寄保单。</p></div>
+        </div>
+        <div class="question-item">
+            <div><img v-bind:src="reqicon" alt="" class="reqicon"><h5 >虎优车险支持异地购买吗？</h5></div>
+            <div><img v-bind:src="ansicon"alt="" class="ansicon"><p>支持异地投保车险，详情请咨询{{servicePhone}}。</p></div>
+        </div>
+        <div class="question-item">
+            <div><img v-bind:src="reqicon" alt="" class="reqicon"><h5 >虎优车险支持什么车辆购买？</h5></div>
+            <div><img v-bind:src="ansicon"alt="" class="ansicon"><p>仅支持个人家庭自用汽车，也暂不支持未上牌新车的车险购买。</p></div>
+        </div>
+        <div class="question-item">
+            <div><img v-bind:src="reqicon" alt="" class="reqicon"><h5 >为什么需要您的个人信息？</h5></div>
+            <div><img v-bind:src="ansicon"alt="" class="ansicon"><p>虎优非常注重保护您的个人信息，因保险公司政策及车辆交通管理系统等原因，需车主提供购保相关信息，尤其是车辆信息，才能为您服务。虎优会严格保护的您的个人信息安全，我们使用多重的安全技术来保护您的个人信息不被未经授权的访问、使用。虎优更不会未经您的允许将您的信息与第三方共享。</p></div>
+        </div>
+        <div class="question-item">
+            <div><img v-bind:src="reqicon" alt="" class="reqicon"><h5 >如何购买？</h5></div>
+            <div><img v-bind:src="ansicon"alt="" class="ansicon"><p>目前我们开通了2种购买渠道：<br>
+1、微信公众号里搜“虎优服务平台”并关注，可以通过下方菜单购买车险；<br>
+2、使用手机访问应用市场下载“虎优车险"APP进行购买。</p></div>
+        </div>
+        <div class="question-item">
+            <div><img v-bind:src="reqicon" alt="" class="reqicon"><h5 >订单已经支付了，如何修改？</h5></div>
+            <div><img v-bind:src="ansicon"alt="" class="ansicon"><p>订单确认后您无法在线直接修改，请联系保险公司进行修改。</p></div>
+        </div>
+        <div class="question-item">
+            <div><img v-bind:src="reqicon" alt="" class="reqicon"><h5 >是否有纸质保单？要多久才能收到保单？</h5></div>
+            <div><img v-bind:src="ansicon"alt="" class="ansicon"><p>车险会有纸质保单递送，出单后会由保险公司寄出，具体以实际物流信息为准。</p></div>
+        </div>
+        <div class="question-item">
+            <div><img v-bind:src="reqicon" alt="" class="reqicon"><h5 >在虎优买车险后出了事故怎么办？</h5></div>
+            <div><img v-bind:src="ansicon"alt="" class="ansicon"><p>可以拨打您购买保险的保险公司进行出险，如不清楚也可以拨打虎优客服电话：{{servicePhone}}，虎优客服专员也会全程电话指导。</p></div>
+        </div>
+        <div class="question-item">
+            <div><img v-bind:src="reqicon" alt="" class="reqicon"><h5 >我今天支付后什么时候可以出保单？</h5></div>
+            <div><img v-bind:src="ansicon"alt="" class="ansicon"><p>当天17点之前支付的当天可以出，17点后的第二天会出，以邮寄的形式寄送给您。</p></div>
+        </div>
+        <div class="question-item">
+            <div><img v-bind:src="reqicon" alt="" class="reqicon"><h5 >我在虎优买了车险，还能到我自己的4S店修车吗？</h5></div>
+            <div><img v-bind:src="ansicon"alt="" class="ansicon"><p>我们的保单均是保险公司官方出单。只要您的4S店跟保险公司有合作关系，就可以享受一站式直接理赔等相关服务。与您在传统渠道购买的保险，理赔机构方面没有任何区别。</p></div>
+        </div>
+        <div class="question-item">
+            <div><img v-bind:src="reqicon" alt="" class="reqicon"><h5 >如何付款？</h5></div>
+            <div><img v-bind:src="ansicon"alt="" class="ansicon"><p>虎优仅支持在线支付。</p></div>
+        </div>
+        <div class="question-item">
+            <div><img v-bind:src="reqicon" alt="" class="reqicon"><h5 >如何验证保单的真伪？</h5></div>
+            <div><img v-bind:src="ansicon"alt="" class="ansicon"><p>每张保单都有自己唯一的保单号，您可以拨打各大保险公司官方客户服务热线或官方网站输入保单号核实真伪。</p></div>
+        </div>
+        <div class="question-item">
+            <div><img v-bind:src="reqicon" alt="" class="reqicon"><h5 >如何联系虎优客服？</h5></div>
+            <div><img v-bind:src="ansicon"alt="" class="ansicon"><p>有任何问题，您可以拨打{{servicePhone}}与虎优车险客服联系或关注公众号虎优服务平台。</p></div>
+        </div>
+      </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,335 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.4.1
+2010-03-01
+Author: Richard Clark - http://richclarkdesign.com
+*/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+html {
+  height: 100%;
+}
+body {
+  line-height: 1;
+  height: 100%;
+  background: #EFEFF4;
+  font-family: PingFangSC-Regular, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
+}
+:focus {
+  outline: 1;
+}
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+nav ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+del {
+  text-decoration: line-through;
+}
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+input,
+select {
+  vertical-align: middle;
+}
+/*css reset over*/
+
+
+.popbox {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  display: none;
+}
+.popbox .arrow {
+  width: 151px;
+  height: 197px;
+  margin-left: 50%;
+  position: relative;
+}
+.popbox .arrow img {
+  width: 100%;
+}
+.popbox p {
+  text-align: center;
+  font-family: PingFang-SC-Medium, "Microsoft YaHei";
+  font-size: 15px;
+  color: #FFFFFF;
+  margin-top: 12px;
+}
+.popbox a {
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 64px;
+  width: 80%;
+  height: 44px;
+  line-height: 44px;
+  color: #fff;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.5);
+  font-family: PingFang-SC-Medium, "Microsoft YaHei";
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 100px;
+}
+.article {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/register/img_huyoo_successbg@3x.png");
+  background-size: cover;
+  background-position: center center;
+}
+.article h2.title {
+  display: block;
+  margin: 0 auto;
+  font-weight: 500;
+  font-family: PingFangSC-Regular;
+  font-size: 0.625rem;
+  line-height: 0.875rem;
+  padding-top: 5.625rem;
+  padding-bottom: 0.09375rem;
+  text-align: center;
+  color: #4A98FC;
+}
+.article p.tip {
+  text-align: center;
+  font-family: PingFangSC-Regular;
+  font-size: 0.5rem;
+  line-height: 0.6875rem;
+  margin-bottom: 0.75rem;
+  color: #999999;
+}
+.article button.download_link {
+  outline: none;
+  width: 8rem;
+  height: 1.375rem;
+  margin: 0 auto;
+  display: block;
+  background-color: #4A98FC;
+  color: #FFFFFF;
+  border: none;
+  font-size: 0.5625rem;
+  border-radius: 3.125rem;
+}
+.article button.download_link:active {
+  background-color: #6FABFC;
+}
+.article .weixin_box {
+  display: block;
+  padding-top: 1.34375rem;
+  padding-left: 1.15625rem;
+}
+.article .weixin_box div.clear {
+  clear: both;
+  margin-bottom: 0.25rem;
+}
+.article .weixin_box div.erweima {
+  float: left;
+  width: 3.25rem;
+  height: 3.21875rem;
+  margin-right: 0.71875rem;
+}
+.article .weixin_box div.erweima img {
+  width: 100%;
+  height: 100%;
+}
+.article .weixin_box div.finger {
+  float: left;
+  height: 3.21875rem;
+  width: 3.75rem;
+  text-align: center;
+}
+.article .weixin_box div.finger img {
+  width: 2.6875rem;
+  height: 2.6875rem;
+  margin-left: 0.40625rem;
+  display: block;
+}
+.article .weixin_box div.finger p.focus {
+  font-family: PingFangSC-Regular;
+  color: #999999;
+  font-size: 0.3125rem;
+  line-height: 0.4375rem;
+  white-space: nowrap;
+  width: 3.75rem;
+  padding-top: 0.0625rem;
+}
+.article .weixin_box div.article_footer {
+  font-family: PingFangSC-Regular;
+  font-size: 0.375rem;
+  color: #999999;
+}
+.article .weixin_box div.article_footer b {
+  color: #2A2A2A;
+  font-weight: normal;
+}
+.article .web_box span {
+  display: block;
+  text-align: center;
+  font-size: 0.375rem;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  color: #4A98FC;
+}
+.article .web_box div.dec {
+  width: 7.96875rem;
+  height: 1.125rem;
+  text-align: center;
+  line-height: 1.125rem;
+  border: 1px dashed #4A98FC;
+  margin: 0 auto;
+  font-size: 0.375rem;
+  border-radius: 0.1875rem;
+  color: #999999;
+}
+.article .web_box div.dec b {
+  font-weight: normal;
+  color: #2A2A2A;
+}
+footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    font-size: 11px;
+    color: #999999;
+    line-height: 16px;
+    padding-bottom: 10px;
+    text-align: center;
+}

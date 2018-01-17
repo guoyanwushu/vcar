@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit"/>
+    <meta http-equiv="x-ua-Compatible" content="IE=Edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <meta content="email=no" name="format-detection"/>
+    <title>Title</title>
+    <style lang="less" scoped>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    section{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        font-size: 17px;
+        color: #999999;
+    }
+    section .big-mobile{
+        margin-top: 29px;
+    }
+    section p{
+        text-align: center;    
+    }
+    section .bottom-content{
+        position: absolute;
+        bottom: 0;
+        height: 52px;
+        width: 100%;
+        font-size: 13px;
+        color: #FF7D00;
+        padding: 8px 0;
+        text-align: center;
+        box-sizing: border-box;
+        line-height: 1.4;
+        background: #FFF2E6;
+
+    }
+    img{
+        width: 100%;
+    }
+    .small-mobile{
+        font-size: 30px;
+        color: #FF7D00;
+        margin-top: 10px;}
+    .small-mobile img{
+        width: 18px;
+        height: 24px;
+        display:inline-block;
+    }
+    .small-mobile a{
+        text-decoration: none;
+        color: #FF7D00;
+    }
+    .bottom-content p{
+        margin: 0;
+    }
+    [v-cloak]{
+        display: none!important;
+    }
+</style>
+</head>
+<body style="background: #ffffff;">
+    <div id="app" v-cloak>
+    <section >
+        <p class="big-mobile"><img v-bind:src="bigPhone" alt=""></p>
+        <p>客服电话</p>
+        <p class="small-mobile">
+            <img v-bind:src="smallPhone" alt="" class="small-mobile">
+            <a v-bind:href="'tel:'+servicePhone">{{servicePhone}}</a>
+        </p>
+        <div class="bottom-content">
+            <p>客服工作时间</p>
+            <p>除法定假日外每周一至周五9:00-18:00</p>
+        </div>
+    </section>
+    </div>
+</body>
+</html>
